@@ -1,0 +1,36 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>UserInfoServlet</servlet-name>
+    <servlet-class>cn.zixin.servlet.UserInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BlogInfoServlet</servlet-name>
+    <servlet-class>cn.zixin.servlet.BlogInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AjaxServlet</servlet-name>
+    <servlet-class>cn.zixin.servlet.AjaxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>UserInfoServlet</servlet-name>
+      <url-pattern>/UserInfoServlet</url-pattern>
+   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BlogInfoServlet</servlet-name>
+    <url-pattern>/BlogInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet</servlet-name>
+    <url-pattern>/AjaxServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>BlogHtTemplate-master/html/index.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
